@@ -221,8 +221,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0e6c00ab98f9a34e8ed921ddced7491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ali: {fileID: 1140832149}
+  waypoints: []
+  test3: {x: 0, y: 0, z: 0}
+  waypointIndex: 0
   simplifyLine: 1
   simplifyTolerance: 0.02
+  speed: 0
 --- !u!120 &192959293
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -496,6 +501,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1140832149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6316845169594702022, guid: 2ea8697e588ec8f4c8796b8ac2ea7b22,
+    type: 3}
+  m_PrefabInstance: {fileID: 1198085811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1198085811
 PrefabInstance:
   m_ObjectHideFlags: 0

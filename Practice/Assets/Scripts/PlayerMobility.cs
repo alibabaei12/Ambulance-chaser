@@ -7,6 +7,7 @@ public class PlayerMobility : MonoBehaviour
 {
     public float speed;
     public float input;
+    public Vector3 position;
 
     private Rigidbody2D rb;
 
@@ -18,6 +19,8 @@ public class PlayerMobility : MonoBehaviour
 
     void FixedUpdate()
     {
+        position = transform.position;
+        /*
         
         //find the mouce posion and store it
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -42,6 +45,6 @@ public class PlayerMobility : MonoBehaviour
         //going forward
         input = Input.GetAxis("Vertical");
         rb.AddForce(transform.up * speed * input);
-
+        */
     }
 }
