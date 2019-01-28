@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0e6c00ab98f9a34e8ed921ddced7491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simplifyLine: 0
+  simplifyLine: 1
   simplifyTolerance: 0.02
 --- !u!120 &192959293
 LineRenderer:
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1752deac9efb36c439da70dab5cfa302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  line: {fileID: 0}
+  line: {fileID: 192959291}
 --- !u!4 &1109618609
 Transform:
   m_ObjectHideFlags: 0

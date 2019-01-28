@@ -11,9 +11,20 @@ public class LineDrawer : MonoBehaviour
     private void Start()
     {
         line = GetComponent<LineRenderer>();
+        //line.SetPosition(0, mousePosition);
+        //line.enabled = true;
+
     }
     private void Update()
     {
+        
+        if (Input.GetMouseButtonDown(0)) //Or use GetKey with key defined with mouse button
+        {
+            
+            line.positionCount = 0;
+            //line.SetPosition(line.positionCount - 1, mousePosition);
+        }
+
         if (Input.GetMouseButton(0)) //Or use GetKey with key defined with mouse button
         {
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -26,8 +37,11 @@ public class LineDrawer : MonoBehaviour
             {
                 line.Simplify(simplifyTolerance);
             }
-            //enabled = false; //Making this script stop
-            //line.SetPosition(0,mousePosition);
+            //line.enabled = false; //Making this script stop
+
+            //line.positionCount = 0;
+
+
         }
     }
     
