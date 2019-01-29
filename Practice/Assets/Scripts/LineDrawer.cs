@@ -19,7 +19,7 @@ public class LineDrawer : MonoBehaviour
 
     private void Start()
     {
-        waypoints = new Vector3[100];
+        waypoints = new Vector3[10];
         player = ali.GetComponent<PlayerMobility>();
         line = GetComponent<LineRenderer>();
         //line.SetPosition(0, mousePosition);
@@ -34,7 +34,7 @@ public class LineDrawer : MonoBehaviour
             // transform.position = waypoints[]
            
             //reset
-            waypoints = new Vector3[100];
+            //waypoints = new Vector3[10];
             line.positionCount = 0;
             //line.SetPosition(line.positionCount - 1, mousePosition);
         }
